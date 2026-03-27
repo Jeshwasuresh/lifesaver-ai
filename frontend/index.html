@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LifeSaver AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+    <div class="card">
+
+        <h1>🚨 LifeSaver AI</h1>
+        <p class="tagline">AI-powered emergency assistant</p>
+
+        <div class="input-box">
+            <input type="text" id="input" placeholder="Describe emergency...">
+            <button onclick="send()">Get Help</button>
+        </div>
+
+        <div id="output" class="output-box"></div>
+
+        <div class="map-box">
+            <h3>📍 Nearby Hospitals</h3>
+            <iframe
+                src="https://www.google.com/maps?q=hospitals+near+me&output=embed">
+            </iframe>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+<div class="input-box">
+    <input type="text" id="input" placeholder="Describe emergency...">
+    <button onclick="send()">Get Help</button>
+    <button onclick="startVoice()">🎤</button>
+</div>
+</body>
+</html>
